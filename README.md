@@ -7,13 +7,11 @@ CHIP-8 is an interpreted programming language, developed by Joseph Weisbecker. I
 
 Install the emulator
 
-  $ gem  install chip8
-
-
+    $ gem  install chip8
 
 ## Usage
 
-  $ chip8 game.rom
+    $ chip8 game.rom
 
 ## Contributing
 
