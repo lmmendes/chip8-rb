@@ -22,8 +22,6 @@ if !filename
 end
 
 if options[:dump]
-  Chip8::Dump.new("/Users/lmmendes/Downloads/c8games/Chip8Test").dump
+  Chip8::Dump.new(filename).dump
   exit
 end
-
-#Chip8::Dump.new("/Users/lmmendes/Downloads/c8games/Chip8Test").dump
