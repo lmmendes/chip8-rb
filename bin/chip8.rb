@@ -22,6 +22,6 @@ if !filename
 end
 
 if options[:dump]
-  Chip8::Dump.new(filename).dump
+  Chip8::Rom.new(filename).dump
   exit
 end

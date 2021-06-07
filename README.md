@@ -6,13 +6,27 @@ CHIP-8 is an interpreted programming language, developed by Joseph Weisbecker. I
 
 ## Installation
 
-Install the emulator
-
-    $ gem  install chip8
+```bash
+$ gem  install chip8
+```
 
 ## Usage
 
-    $ chip8 game.rom
+```bash
+$ chip8 game.rom
+```
+
+## Troubleshooting
+
+chip8-rb depends on [gosu](https://github.com/gosu/gosu) with [SDL 2](http://www.libsdl.org/) library if you see this error:
+
+```
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+```
+
+Follow the Gosu instructions instructions in order to understand how to install `gosu` and it's dependencies like `sdl`:
+
+[Installation instructions for macOS](https://github.com/gosu/gosu/wiki/Getting-Started-on-OS-X) | [Installation instructions for Linux](https://github.com/gosu/gosu/wiki/Getting-Started-on-Linux)
 
 ## Contributing
 

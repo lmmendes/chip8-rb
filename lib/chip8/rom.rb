@@ -1,6 +1,5 @@
 module Chip8
-  class Dump
-    attr_reader :file, :rom
+  class Rom
 
     def initialize(file)
       @file = file
@@ -20,6 +19,7 @@ module Chip8
       puts ""
     end
 
+    # returns the
     def decode(opcode)
       o   = opcode >> 12
       kk  = opcode & 0x0FF
@@ -84,11 +84,10 @@ module Chip8
       when 0xC
         "RAND V#{x}, #{kk}"
       when 0xD
-        "SPRITE V#{x}, #{kk}, #{n}"
+        "SPRITE V#{x}, #{kk}, #{nnn}"
       end
 
     end
-
 
   end
 end
