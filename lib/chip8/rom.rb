@@ -8,7 +8,7 @@ module Chip8
 
     def dump
       puts ""
-      puts "File #{file} has #{rom.size} instructions."
+      puts "File #{@file} has #{@rom.size} instructions."
       puts "For information about instructions see "
       puts "http://devernay.free.fr/hacks/chip8/chip8def.htm"
       puts ""
